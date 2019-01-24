@@ -14,13 +14,14 @@
     "mock": "json-server --watch mock/data.json json-server --watch mock/data1.json --m mock/post-to-get.js"
   },
   "dependencies": {
+    "better-scroll": "^0.1.7",
     "css-loader": "^0.28.4",
+    "growl": "^1.10.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
     "style-loader": "^0.18.2",
     "vue": "^2.3.3",
-    "vue-router": "^2.3.1",
-    "better-scroll": "^0.1.7"
+    "vue-router": "^2.3.1"
   },
   "devDependencies": {
     "css-loader": "^0.28.0",
