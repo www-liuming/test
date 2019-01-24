@@ -1,0 +1,23 @@
+.border-one(@color: rgba(7,17,27,0.1)){   /* 变量以@开始,必须初始化一个值如  @color: red */
+  position: relative;
+  &:after{
+  	display:block;
+	position:absolute;
+	left:0;
+	bottom:0;
+	border-top:1px solid @color;
+	content: '';
+	width:100%;
+  }
+}
+.border-none(){
+	&:after{
+		display:none;
+	}
+}
+.bg-image(@url: 'brand'){
+	background-image: url('@{url}@2x.png');                                      /* mixin中的字符串拼接'@{url}@2x.png' */
+	@media (-webkit-min-device-pixel-radio:3),(min-device-pixel-radio:3){
+		background-image: url('@{url}@3x.png');
+	}
+}
